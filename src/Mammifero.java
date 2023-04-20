@@ -11,13 +11,12 @@ public class Mammifero extends Esemplare{
 		return periodoGestazione;
 	}
 
+	public void setPeriodoGestazione(int periodoGestazione) {
+		this.periodoGestazione = periodoGestazione;
+	}
+
 	@Override
 	public String toString() {
 		return "Mammifero [periodoGestazione=" + periodoGestazione + "]";
 	}
-
-	public void setPeriodoGestazione(int periodoGestazione) {
-		this.periodoGestazione = periodoGestazione;
-	}
-	
 }

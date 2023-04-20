@@ -21,17 +21,11 @@ public class Vasca {
 		this.numeroEsemplari--;
 	}
 
-	@Override
-	public String toString() {
-		return "Vasca [nome=" + nome + ", listaEsemplari=" + listaEsemplari + ", numeroEsemplari=" + numeroEsemplari
-				+ "]";
-	}
-
 	public String getNome() {
 		return nome;
 	}
 
-	public void setNome(String nome) {
+	public void setNome(String nome) {	//le vasche sono identificabili dal nome, possibile cambiarlo?
 		this.nome = nome;
 	}
 
@@ -39,5 +33,9 @@ public class Vasca {
 		return numeroEsemplari;
 	}
 	
-
+	@Override
+	public String toString() {
+		return "Vasca [nome=" + nome + ", listaEsemplari=" + listaEsemplari + ", numeroEsemplari=" + numeroEsemplari
+				+ "]";
+	}
 }

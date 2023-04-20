@@ -10,14 +10,13 @@ public class Pesce extends Esemplare{
 	public int getProfondità() {
 		return profondità;
 	}
+
+	public void setProfondità(int profondità) {
+		this.profondità = profondità;
+	}
 	
 	@Override
 	public String toString() {
 		return "Pesce [ID=" + getId() + " profondità=" + profondità + "]";
 	}
-
-	public void setProfondità(int profondità) {
-		this.profondità = profondità;
-	}
-
 }

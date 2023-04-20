@@ -16,17 +16,17 @@ public class Acquario {
 		return vasca2;
 	}
 
-	@Override
-	public String toString() {
-		return "Acquario\nVasca 1=" + vasca1 + "\nVasca 2=" + vasca2;
-	}
-
 	public void setVasca1(Vasca vasca1) {
 		this.vasca1 = vasca1;
 	}
 
 	public void setVasca2(Vasca vasca2) {
 		this.vasca2 = vasca2;
+	}
+
+	@Override
+	public String toString() {
+		return "Acquario\nVasca 1=" + vasca1 + "\nVasca 2=" + vasca2;
 	}
 
 }
