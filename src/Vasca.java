@@ -26,6 +26,18 @@ public class Vasca {
 		return "Vasca [nome=" + nome + ", listaEsemplari=" + listaEsemplari + ", numeroEsemplari=" + numeroEsemplari
 				+ "]";
 	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getNumeroEsemplari() {
+		return numeroEsemplari;
+	}
 	
 
 }

@@ -16,4 +16,8 @@ public class Pesce extends Esemplare{
 		return "Pesce [ID=" + getId() + " profondità=" + profondità + "]";
 	}
 
+	public void setProfondità(int profondità) {
+		this.profondità = profondità;
+	}
+
 }

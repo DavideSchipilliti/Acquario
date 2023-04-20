@@ -15,5 +15,9 @@ public class Mammifero extends Esemplare{
 	public String toString() {
 		return "Mammifero [periodoGestazione=" + periodoGestazione + "]";
 	}
+
+	public void setPeriodoGestazione(int periodoGestazione) {
+		this.periodoGestazione = periodoGestazione;
+	}
 	
 }

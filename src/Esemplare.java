@@ -1,6 +1,6 @@
 
 public abstract class Esemplare {
-	private String id;
+	private String id;	//id alfanumerico
 	
 	public Esemplare(String id) {
 		this.id=id;
