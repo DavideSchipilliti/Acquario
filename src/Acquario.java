@@ -1,32 +1,33 @@
+import java.util.List;
+import java.util.ArrayList;
 
 public class Acquario {
-	private Vasca vasca1;
-	private Vasca vasca2;
+	private List<Vasca> listaVasche;
 	
-	public Acquario(String nomeVasca1, String nomeVasca2) {
-		this.vasca1=new Vasca(nomeVasca1);
-		this.vasca2=new Vasca(nomeVasca2);
+	public Acquario() {
+		this.listaVasche=new ArrayList<>();
 	}
 
-	public Vasca getVasca1() {
-		return vasca1;
+	public List<Vasca> getListaVasche() {
+		return this.listaVasche;
 	}
 
-	public Vasca getVasca2() {
-		return vasca2;
+	public void setListaVasche(List<Vasca> lista) {
+		this.listaVasche = lista;
 	}
 
-	public void setVasca1(Vasca vasca1) {
-		this.vasca1 = vasca1;
+	public void addVasca(Vasca vasca) {
+		this.listaVasche.add(vasca);
 	}
-
-	public void setVasca2(Vasca vasca2) {
-		this.vasca2 = vasca2;
+	
+	public void removeVasca(Vasca vasca) {
+		this.listaVasche.remove(vasca);
 	}
 
 	@Override
 	public String toString() {
-		return "Acquario\nVasca 1=" + vasca1 + "\nVasca 2=" + vasca2;
+		return "Acquario [listaVasche=" + listaVasche + "]";
 	}
+
 
 }

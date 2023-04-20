@@ -4,7 +4,6 @@ import java.util.ArrayList;
 public class Vasca {
 	private String nome;
 	private List<Esemplare> listaEsemplari;
-	private int numeroEsemplari;	//necessario?
 
 	public Vasca(String nome) {
 		this.nome=nome;
@@ -13,12 +12,10 @@ public class Vasca {
 	
 	public void add(Esemplare esemplare) {
 		listaEsemplari.add(esemplare);
-		this.numeroEsemplari++;
 	}
 	
 	public void remove(Esemplare esemplare) {
 		listaEsemplari.remove(esemplare);
-		this.numeroEsemplari--;
 	}
 
 	public String getNome() {
@@ -30,12 +27,20 @@ public class Vasca {
 	}
 
 	public int getNumeroEsemplari() {
-		return numeroEsemplari;
+		return this.listaEsemplari.size();
+	}
+
+	public List<Esemplare> getListaEsemplari() {
+		return listaEsemplari;
+	}
+	
+	public void setListaEsemplari(List<Esemplare> listaEsemplari) {
+		this.listaEsemplari = listaEsemplari;
 	}
 	
 	@Override
 	public String toString() {
-		return "Vasca [nome=" + nome + ", listaEsemplari=" + listaEsemplari + ", numeroEsemplari=" + numeroEsemplari
-				+ "]";
+		return "Vasca [nome=" + nome + ", numeroEsemplari=" + this.listaEsemplari.size() + "]";
 	}
+
 }

@@ -9,7 +9,8 @@ public abstract class Esemplare {
 	public String getId() {
 		return id;
 	}
-	
-	@Override
-	public abstract String toString();	//voglio che ogni esemplare implementa il metodo toString
+
+	public void setId(String id) {
+		this.id = id;
+	}
 }
